@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo - List App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <i class="fas fa-clipboard-list"></i>
+        Todo List
+      </div>
+      <div id="task-container">
+        <i class="fas fa-receipt"></i>
+        <form id="task-form">
+          <input type="text" id="task" name="task">
+          <input type="submit" id="task-btn" value="Add Task">
+        </form>
+      </div>
+      <div id="task-list-container">
+        <div class="options">
+          <a href="#" class="cmplt-tasks">Complete all Tasks</a>
+          <a href="#" class="clear-tasks">Clear Completed</a>
+        </div>
+        <ul id="task-list" class="collection">
+        </ul>
+        <div class="options">
+          <span class="total-tasks">0 tasks</span>
+          <div class="task-status">
+            <a href="#" class="all-tasks">All</a>
+            <a href="#" class="uncomplete-tasks">Uncomplete</a>
+            <a href="#" class="completed-tasks">Completed</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
